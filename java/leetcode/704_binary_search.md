@@ -24,3 +24,22 @@ class Solution {
 }
 
 ```
+
+# Step by step examples
+
+## Array of [-1,0,3,5,9,12], we search for 9
+
+**First iteration**
+
+- min = 0, max = 5
+- mid = (0 + 5) / 2 = 2 (when type in Java is int division returns integer)
+- nums[2] = 3
+- 3 < 9 so we move right: min = 3
+
+**Second iteration**
+
+- min = 3, max = 5
+- mid = ( 3 + 5) / 2 = 4
+- nums[4] = 9
+- 9 = 9 --> we found it!
+- return 4
