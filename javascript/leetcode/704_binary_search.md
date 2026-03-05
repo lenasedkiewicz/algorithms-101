@@ -54,3 +54,26 @@ I had tendency to constantly call length() method instead of using property leng
 - nums[4] = 9
 - 9 = 9 --> we found it!
 - return 4
+
+## Array of [-1,0,3,5,9,12], we search for 2
+
+**First iteration**
+min = 0; max = 5
+mid = Math.floor((0 + 5) / 2) = 2
+nums[2] = 3
+3 > 2, so our max now is 3 - 1 = 2;
+
+**Second iteration**
+min = 0, max = 2
+mid = Math.floor((0 + 2) / 2) = 1;
+nums[1] = 0;
+0 < 2 so our new min is 1 + 1 = 2;
+
+**Third iteration**
+min = 2, max = 2
+mid = Math.floor((2 + 2) / 2) = 2
+nums[2] = 3
+3>2, so new max is 2 - 1 = 1
+
+min > max
+2 > 1 - we return -1
