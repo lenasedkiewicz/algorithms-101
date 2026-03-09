@@ -8,7 +8,6 @@ If target exists, we return it's index. If not, we return -1
 var search = function(nums, target) {
     let min = 0;
     let max = nums.length -1;
-    let mid = 0;
 
     while (min <= max) {
         let mid = Math.floor((min + max) / 2);
