@@ -1,4 +1,4 @@
-# Objective
+# 704 Binary Search - Objective
 
 If target exists, we return it's index. If not, we return -1
 
